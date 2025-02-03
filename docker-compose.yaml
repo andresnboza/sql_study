@@ -6,4 +6,5 @@ services:
     ports:      
       - "1433:1433"    
     volumes:
-      - ./sql-server-scripts:/tmp
+      - ./db:/var/opt/mssql/data/
+      - ./sql-server-scripts:/docker-entrypoint-initdb.d
