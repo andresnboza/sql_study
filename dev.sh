@@ -13,4 +13,4 @@ docker rm -f $IMAGE_NAME
 docker run -d --name $IMAGE_NAME -p 1433:1433 -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=YourStrong!Passw0rd" $IMAGE_NAME
 
 # Copy the backup file to the container (ensure the file path is correct)
-docker cp AdventureWorks2019.bak $IMAGE_NAME:/serverless
+docker cp AdventureWorks2019.bak $IMAGE_NAME:/backups

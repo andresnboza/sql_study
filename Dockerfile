@@ -13,7 +13,7 @@ EXPOSE 1433
 USER root
 
 # Create directory for backups
-RUN mkdir -p /serverless
+RUN mkdir -p /backups
 
 # Set back to default user
 USER mssql

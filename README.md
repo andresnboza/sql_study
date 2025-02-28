@@ -8,11 +8,13 @@
 
 ## Before continuing
 - Make sure you have docker desktop installed in your machine
-- Make sure you [Download the backup file for AdventureWorks DataWarehouse database](https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms), and place it in the root of the project
+- Make sure you [Download the backup file for AdventureWorks database](https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms), and place it in the root of the project
 
 ## Description
 - Remember THIS IS FOR STUDY PURPOSES ONLY
+- Restore the AdventureWorks database in a SQL Server container, by using the backup file that is copied in the "backups" folder 
 - Make sure you can execute the script ./dev.sh, by executing first the command (Only for linux users)
+
 ```bash
 chmod +x dev.sh
 ```
