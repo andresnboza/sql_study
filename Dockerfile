@@ -9,5 +9,14 @@ ENV MSSQL_PID=Express
 # Expose SQL Server port
 EXPOSE 1433
 
+# Switch to root user to allow directory creation
+USER root
+
+# Create directory for backups
+RUN mkdir -p /serverless
+
+# Set back to default user
+USER mssql
+
 # Start SQL Server when the container runs
 CMD ["/opt/mssql/bin/sqlservr"]
