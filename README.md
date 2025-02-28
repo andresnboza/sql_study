@@ -15,3 +15,12 @@ chmod +x dev.sh
 - Execute the script ./dev.sh is a bash script that will build the image and run the container
 - User for the database is sa
 - [Download the backup file for AdventureWorks DataWarehouse database](https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms) and use it to restore the database in the container
+- Within the server use
+```bash
+localhost,1433
+```
+
+## To see if the connection is running
+```bash
+docker logs my_sql_container | grep "SQL Server is now ready for client connections"
+```
